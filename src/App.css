@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt:regular);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+  overflow-x: hidden;
+}
+
+body{
+  @apply font-main text-white bg-bg
+}
+
+
+span{
+  @apply font-bold text-brand
+}
+
+.wrapper{
+  @apply w-11/12 md:w-9/12 mx-auto max-w-[1440px]
+}
+
+.modal-btn{
+  color: rgb(173, 169, 169);
+  @apply bg-[rgba(0,0,0,0.6)] cursor-pointer py-2 px-4
+}
+
+.circle{
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.3;
+  background: linear-gradient(180deg, rgba(240,42,113,1) 0%, rgba(20, 16, 59) 100%);
+}
+
+.center-positioning{
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 25%;
+}
+
+.logo{
+  background: linear-gradient(180deg, rgba(240,42,113,1) 0%, rgba(255,255,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
