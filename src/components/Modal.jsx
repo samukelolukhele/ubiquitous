@@ -22,7 +22,7 @@ export default function Modal() {
 
   const styled =
     "!bg-white !text-brand ease-in duration-300 border-b-2 border-b-brand";
-  const noStyle = "";
+
 
   useEffect(() => {
     handleTicketPrice(ticketPackage, ticketQuantity);
@@ -93,7 +93,7 @@ export default function Modal() {
                   Ubiquitous
                 </h1>
                 <h1
-                  className="font-main font-black logo text-2xl xl:text-4xl"
+                  className="font-main cursor-pointer font-black logo text-2xl xl:text-4xl"
                   onClick={handleCloseModal}
                 >
                   X
@@ -105,8 +105,8 @@ export default function Modal() {
                   <div className="flex flex-row mx-auto mb-8">
                     <button
                       name="regular"
-                      className={`modal-btn mr-1 lg:!px-6 ${
-                        buttonClicked.regular ? styled : noStyle
+                      className={`modal-btn hover:border-2 border-white ease-in duration-100 mr-1 lg:!px-6 ${
+                        buttonClicked.regular ? styled : ""
                       }`}
                       onClick={handlePackage}
                     >
@@ -114,8 +114,8 @@ export default function Modal() {
                     </button>
                     <button
                       name="vip"
-                      className={`modal-btn mr-1 md:!px-8 ${
-                        buttonClicked.vip ? styled : noStyle
+                      className={`modal-btn hover:border-2 border-white ease-in duration-100 mr-1 md:!px-8 ${
+                        buttonClicked.vip ? styled : ""
                       }`}
                       onClick={handlePackage}
                     >
@@ -123,8 +123,8 @@ export default function Modal() {
                     </button>
                     <button
                       name="royalty"
-                      className={`modal-btn md:!px-5 ${
-                        buttonClicked.royalty ? styled : noStyle
+                      className={`modal-btn hover:border-2 border-white ease-in duration-100 md:!px-5 ${
+                        buttonClicked.royalty ? styled : ""
                       }`}
                       onClick={handlePackage}
                     >
